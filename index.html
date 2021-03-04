@@ -1,0 +1,63 @@
+<!-- REPO: js-mail-dadi
+GOAL:
+1 - Chiedi all'utente la sua email, controlla che sia nella lista di chi può accedere, stampa un messaggio appropriato
+2 - Generare un numero random da 1 a 6, sia per il giocatore sia per il computer. Stabilire il vincitore, in base a chi fa il punteggio più alto.
+NOTE:
+Come detto in classe potete fare entrambi gli esercizi all'interno dello stesso file, commentando il codice dell'esercizio gia' svolto di volta in volta -->
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>JS ex3</title>
+  </head>
+  <body>
+    <div class="container">
+    </div>
+    <script>
+      var email = ['ale.dongu@hotmail.it'];
+      var enabled = prompt("Login")
+      for (var i=0;i<email.length;i++) {
+          if (enabled == email) {
+            console.log(email[i]);
+          }
+          else {
+            console.log("Register first");
+          }
+
+      }
+
+      var player1 = Math.floor((Math.random() * 6) + 1);
+      var player2 = player1
+      var arr = [ '1', '2', '3', '4', '5', '6' ];
+      for (var picnumber = (Math.random() * 6) + 1;) {
+          if (arr[i].length % 2 == 0) {
+            console.log(arr[i]);
+          }
+      }
+
+    // DICE GAME
+    // // var picnumber = Math.floor((Math.random() * 6) + 1);
+    // var player1  = Math.floor((Math.random() * 6) + 1);
+    // var player2  = Math.floor((Math.random() * 6) + 1);
+    // if (picnumber == 1){
+    //   img.src = 'img/1.jpg';
+    // } else if (picnumber == 2) {
+    //   img.src = 'img/2.jpg';
+    // } else if (picnumber == 3) {
+    //   img.src = 'img/3.jpg';
+    // } else if (picnumber == 4) {
+    //   img.src = 'img/4.jpg';
+    // } else if (picnumber == 5) {
+    //   img.src = 'img/5.jpg';
+    // } else {
+    //   img.src = 'img/6.jpg';
+    // }
+    //
+    // img.src= pics[picnumber];
+
+
+    </script>
+  </body>
+
+</html>
