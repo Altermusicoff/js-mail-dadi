@@ -8,8 +8,9 @@ Come detto in classe potete fare entrambi gli esercizi all'interno dello stesso 
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="icon" href="img/logo.jpg">
     <link rel="stylesheet" href="css/style.css">
-    <title>Dice</title>
+    <title>Dice: the Game</title>
   </head>
   <body>
     <div class="container">
@@ -19,6 +20,9 @@ Come detto in classe potete fare entrambi gli esercizi all'interno dello stesso 
       <div class="player2side">
         <img id="player2" src="" alt="">
 
+      </div>
+      <div>
+        <h1 id="result"></h1>
       </div>
     </div>
     <script>
@@ -44,63 +48,66 @@ Come detto in classe potete fare entrambi gli esercizi all'interno dello stesso 
 
       if (player1 < player2){
         console.log(player1,player2,"YOU LOST!");
+        document.getElementById('result').innerHTML = "YOU LOST!";
       }
       else if (player1 > player2){
         console.log(player1,player2,"YOU WIN!");
+        document.getElementById('result').innerHTML = "YOU WIN!";
       }
       else {
         console.log(player1,player2,"DRAW!");
+        document.getElementById('result').innerHTML = "DRAW!";
       }
 
       // IMMAGINI
 
       if (player1 == 1) {
-        document.getElementById("player1").src = "img/1.jpg";
+        document.getElementById("player1").src = "img/1.svg";
       }
 
       else if (player1 == 2) {
-        document.getElementById("player1").src = "img/2.jpg";
+        document.getElementById("player1").src = "img/2.svg";
       }
 
       else if (player1 == 3) {
-        document.getElementById("player1").src = "img/3.jpg";
+        document.getElementById("player1").src = "img/3.svg";
       }
 
       else if (player1 == 4) {
-        document.getElementById("player1").src = "img/4.jpg";
+        document.getElementById("player1").src = "img/4.svg";
       }
 
       else if (player1 == 5) {
-        document.getElementById("player1").src = "img/5.jpg";
+        document.getElementById("player1").src = "img/5.svg";
       }
 
       else if (player1 == 6) {
-        document.getElementById("player1").src = "img/6.jpg";
+        document.getElementById("player1").src = "img/6.svg";
       }
 
 
       if (player2 == 1) {
-        document.getElementById("player2").src = "img/1.jpg";
+        document.getElementById("player2").src = "img/1.svg";
       }
 
       else if (player2 == 2) {
-        document.getElementById("player2").src = "img/2.jpg";
+        document.getElementById("player2").src = "img/2.svg";
       }
 
       else if (player2 == 3) {
-        document.getElementById("player2").src = "img/3.jpg";
+        document.getElementById("player2").src = "img/3.svg";
       }
 
       else if (player2 == 4) {
-        document.getElementById("player2").src = "img/4.jpg";
+        document.getElementById("player2").src = "img/4.svg";
       }
 
       else if (player2 == 5) {
-        document.getElementById("player2").src = "img/5.jpg";
+        document.getElementById("player2").src = "img/5.svg";
       }
 
       else if (player2 == 6) {
-        document.getElementById("player2").src = "img/6.jpg";
+        document.getElementById("player2").src = "img/6.svg";
       }
 
 

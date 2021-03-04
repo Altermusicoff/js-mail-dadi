@@ -10,17 +10,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
 }
 
 h1{
-  line-height: 80px;
+  line-height: 200px;
 }
 
-.player1side{
-  
-}
-
-.player2side{
-
+img{
+  width: 600px;
 }
